@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/botm_style.css' %}">
+    
+</head>
+<body>
+   
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+<footer>
+    <div class="main_bottom_bar">
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-3 footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/VR2dBhsCA3nhLtmp6" target="_blank">M9Q9+43 Madhyapur Thimi</a></p>
+                    <p><i class="fa fa-phone"></i> +9779869347556</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:fresho@example.com">fresho@example.com</a></p>
+                </div>
+                <div class="col-md-3 footer-follow">
+                    <h4>Follow Us</h4>
+                    <p>"Stay in the loop with all the latest news and exclusive behind-the-scenes updates! Follow us on social media today!"</p>
+                    <div class="social-icons">
+                        <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 footer-hours">
+                    <h4 class="text-white text-uppercase">Open Hours</h4>
+                    <h6 class="text-white text-uppercase">Sunday - Saturday</h6>
+                    <p>6:00 AM - 9:00 PM</p>
+                </div>
+                <div class="col-md-3 footer-newsletter">
+                    <h4 class="text-white text-uppercase">Newsletter</h4>
+                    <p>For more updates about my shop, including new arrivals, exclusive offers, and special events, please feel to contact us VIA <a class="nav-link" href="{% url 'home'%}">CONTACT US</a></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="mb-2">Copyright &copy; <a class="font-weight-bold" href="#">Freshobar.com.np</a>. All Rights Reserved.</p>
+            <p class="m-0">Designed by <a class="font-weight-bold" href="https://www.linkedin.com/feed/">Saroj</a></p>
+        </div>
+    </div>
+</footer>
+</html>

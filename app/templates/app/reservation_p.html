@@ -1,0 +1,73 @@
+{% extends 'app/index.html'%}
+{% block content%}
+{% load static %}
+
+  <!-- Render the form fields as paragraphs -->
+  <div class="image-container">
+    <img src="{% static 'img/bg.jpg' %}" alt="Background Image">
+    <div class="overlay-text">
+        <div class="text-content" >
+            <h1>Reservation!!</h1>
+            <p>Home to healthy food, a relaxed atmosphere, high-quality tea & coffee, and family friendly service. </p>
+        </div>
+        <div class='Home-logo'>
+            Fresho
+        </div>
+        
+    </div>
+</div>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="reservation position-relative overlay-top overlay-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 my-5 my-lg-0">
+                    <div class="p-5">
+                        <div class="mb-4">
+                            <h1 class="display-3 text-dark">Having Some Problem</h1>
+                            <h1 class="text-black">For Online Reservation</h1>
+                        </div>
+                        <p class="text-black">Please note you will receive a confirmation email once 
+                            your reservation has been successful. If you do not receive the confirmation email,
+                             don't hesitate to contact our reservations team at  +9779869347556
+                             . (There may have been an error in your reservation).</p>
+                        <ul class="list-inline text-black m-0">
+                            <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Enter Your Valid Detail</li>
+                            <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Confirm Your reservation Via  <a href="{% url 'home'%}">Contact</a></li>
+                            <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>If you or your guests have dietary requirements, 
+                                please mention them in <i>Any Special Request </i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                        <h1 class="text-black mb-4 mt-5">Book Your Table</h1>
+                        {% if submitted %}
+                            your reservation is submitted Successfully!!!!
+                        {% else %}
+                            
+                            <form method="post" action="">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book Now</button>
+
+                            </form>
+                        {% endif %}
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Reservation End -->
+ 
+
+{% endblock %}
+
+
+    <!-- Reservation Start --> <!-- This needs to be edited -->
+ 
+

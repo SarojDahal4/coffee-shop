@@ -1,0 +1,88 @@
+{% extends 'app/index.html'%}
+{% block content%}
+{% load static %}
+
+<div class="main"><!-- Render the form fields as paragraphs -->
+  <div class="image-container">
+    <img src="{% static 'img/bg.jpg' %}" alt="Background Image">
+    <div class="overlay-text">
+        <div class="text-content" >
+            <h1>Contact Us!!</h1>
+            <p>Home to healthy food, a relaxed atmosphere, high-quality tea & coffee, and family friendly service. </p>
+        </div>
+        <div class='Home-logo'>
+            Fresho
+        </div>
+        
+    </div>
+</div>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="section-title">
+    <h4 class="text-brown text-uppercase" style="letter-spacing: 5px;">Contact Us</h4>
+    <h1 class="display-4">Feel Free To Contact</h1>
+</div>
+<div class="row px-3 pb-2">
+    <div class="col-sm-4 text-center mb-3">
+        <i class="fa fa-2x fa-map-marker-alt mb-3 text-dark"></i>
+        <h4 class="font-weight-bold">Address</h4>
+        <p><i class="fa fa-map-marker-alt mr-2"></i><a href="https://maps.app.goo.gl/VR2dBhsCA3nhLtmp6" target="_blank">M9Q9+43 Madhyapur Thimi</a></p>
+    </div>
+    <div class="col-sm-4 text-center mb-3">
+        <i class="fa fa-2x fa-phone-alt mb-3 text-dark"></i>
+        <h4 class="font-weight-bold">Phone</h4>
+        <p>+9779869347556</p>
+    </div>
+    <div class="col-sm-4 text-center mb-3">
+        <i class="far fa-2x fa-envelope mb-3 text-dark"></i>
+        <h4 class="font-weight-bold">Email</h4>
+        <p>info@example.com</p>
+    </div>
+</div>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="reservation position-relative overlay-top overlay-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 my-5 my-lg-0">
+                    <div class="p-5">
+                        <div class="mb-4">
+                            <h1 class="display-4 text-black">Get in Touch with us</h1>
+                            
+                        </div>
+                        <p class="text-black">Contact us today to get in touch with our friendly team. We’re here to answer your questions, take reservations, and make your experience with us memorable!
+
+                            Your satisfaction is our priority, and we value every opportunity to connect
+                             with our valued customers. So, don’t hesitate to reach out and let us know how 
+                             we can make your experience with us even more exceptional. We are excited to
+                             hear from you and look forward to making your visit to our cafe truly unforgettable!</p>
+                                      
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                        <h1 class="text-black mb-4 mt-5">Contact Us</h1>
+                        
+                            
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button class="btn btn-warning btn-block font-weight-bold py-3" type="submit">Send Message</button>
+                        </form>
+                        
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Reservation End -->
+ 
+</div> 
+{% endblock %}
+
+
+    <!-- Reservation Start --> <!-- This needs to be edited -->
+ 
+

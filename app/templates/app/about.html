@@ -1,0 +1,53 @@
+
+{% extends 'app/index.html'%}
+{% load static %}
+{% block content%}
+<div class="main">
+
+
+    <div class="image-container">
+        <img src="{% static 'img/bg.jpg' %}" alt="Background Image">
+        <div class="overlay-text">
+            <div class="text-content" >
+                <h1>About!!!</h1>
+                <p>Home to healthy food, a relaxed atmosphere, high-quality tea & coffee, and family friendly service. </p>
+            </div>
+            <div class='Home-logo'>
+                Fresho
+            </div>
+            
+        </div>
+    </div>
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-dark text-uppercase "  style="letter-spacing: 5px; text-decoration: underline;">About Us</h4>
+            <h1 class="display-4"  style="text-decoration: underline;">Serving Since 2023</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3">Our Story</h1>
+                <h5 class="mb-3">Freshly graduated and facing a tough job market, I started a small coffee and tea shop called Fresho Coffee.</h5>
+                <p>With my savings, family and friends support and a bit of luck, it quickly became a beloved community hub, offering not just drinks, but a warm, welcoming space for everyone.</p>
+                
+            </div>
+            <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/about.png' %}" style="object-fit: cover;" alt="About Image">
+                </div>
+            </div>
+            <div class="col-lg-4 py-0 py-lg-5">
+                <h1 class="mb-3">Our Vision</h1>
+                <p>At Fresho Coffee, our vision is to create a welcoming sanctuary where every cup of coffee or tea brings people together. We strive to foster a sense of community, inspire connections, and provide a cozy space where everyone feels at home. Through quality, sustainability, and warmth, we aim to be the heart of our neighborhood, brewing more than just beverages but also unforgettable moments and lasting relationships.</p>
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Quality and Sustainability: We are committed to sourcing the finest, ethically produced coffee beans and organic teas to ensure every cup is exceptional while supporting sustainable practices.</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Community Engagement: By book readings and art showcases, we aim to cultivate a vibrant, inclusive community space where everyone can connect and share their passions.</h5>
+                <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Welcoming Atmosphere: We prioritize creating a cozy, inviting environment with comfortable seating, local art, and friendly service, making Fresho's a home away from home for our customers.</h5>
+                
+            </div>
+        </div>
+    </div>
+</div>
+ 
+</div>
+{% endblock %}
+    

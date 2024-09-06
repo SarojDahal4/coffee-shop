@@ -1,0 +1,235 @@
+
+{% extends 'app/index.html'%}
+{% load static %}
+{% block content %}
+<style>
+    .sm1{
+        padding: 20px;
+        width: 300px;
+        height: auto;
+        border-radius: 20%;
+
+    }
+</style>
+<div class="main">
+    <div class="image-container">
+        <img src="{% static 'img/bg.jpg' %}" alt="Background Image">
+        <div class="overlay-text">
+            <div class="text-content" >
+                <h1>Welcome to Our Cafe!!</h1>
+                <p>Home to healthy food, a relaxed atmosphere, high-quality tea & coffee, and family friendly service. </p>
+            </div>
+            <div class='Home-logo'>
+                Fresho
+            </div>
+            
+        </div>
+    </div>
+    <div class="section-title">
+        <h1 class="text-dark text-uppercase "  style="letter-spacing: 3px;">About Us</h1>
+        
+    </div>
+    <div class="row ">
+        
+    
+        <div class="col-lg-4 mb-4 mb-lg-0">
+        
+            <img class="img-fluid mb-3 mb-sm-0" src="{% static 'img/rest.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4>Our Story</h4>
+            <h8>Freshly graduated and facing a tough job market, We started a small coffee and tea shop called Fresho Coffee.</h8>
+            <a href="{% url 'about'%}" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+            <img class="sm1"src="{% static 'img/service-2.jpg' %}" alt="">
+        </div>
+    
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4>Our Vision</h4>
+            <h8>At Fresho Coffee, our vision is to create a welcoming sanctuary where every cup of coffee or tea 
+                brings people together.</h8>
+            <h5 class="mb-3"><i class="fa fa-check text-secondary mr-3"></i>Quality and Sustainability...</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-secondary mr-3"></i>Community Engagement...</h5>
+            <h5 class="mb-3"><i class="fa fa-check text-secondary mr-3"></i>Welcoming Atmosphere...</h5>
+            <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+        </div>
+        
+    </div>
+
+    <br>
+    <div class="section-title">
+        <h1 class="text-dark text-uppercase "  style="letter-spacing: 3px;" href="{% url 'service'%}">Our Service</h1>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 mb-5">
+            <div class="row align-items-center">
+                <div class="col-sm-5">
+                    <img class="img-fluid mb-3 mb-sm-0" src="{% static 'img/service-1.jpg' %}" alt="">
+                </div>
+                <div class="col-sm-7" ">
+                    At Fresho Café, we are committed to delivering fast and efficient service.
+                    Our goal is to ensure that you receive your freshly brewed coffee, refreshing tea, 
+                    light snacks, and bubble tea swiftly, allowing you to enjoy high-quality products even 
+                    on the busiest of days. We prioritize speed and satisfaction to provide you with a seamless
+                    and enjoyable café experience.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-5">
+            <div class="row align-items-center">
+                <div class="col-sm-5">
+                    <img class="img-fluid mb-3 mb-sm-0" src="{% static 'img/service-2.jpg' %}" alt="">
+                </div>
+                <div class="col-sm-7">
+                    Central to our mission is the use of the finest coffee beans to craft exceptional beverages.
+                    We source premium beans from trusted growers, roast them to perfection, and expertly prepare
+                    each cup to highlight its rich flavor and aroma. Whether you’re savoring a robust espresso or
+                    a smooth latte, our focus on freshness and quality guarantees a superior coffee experience that
+                        stands out with every sip.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5">
+        <div class="menu_list">
+            <div class="container">
+                <div class="section-title">
+                    <h4 class="text-dark text-uppercase" style="letter-spacing: 5px;">Menu & Pricing</h4>
+                    <h1 class="display-4">Competitive Pricing</h1>
+                </div>
+                <div class="row">
+                    <!-- Hot Coffee Section -->
+                    <div class="col-lg-6">
+                        <h1 class="mb-5">Espresso Based</h1>
+                        <div class="menu-item mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle" src="{% static 'img/menu-1.jpg' %}" alt="Black Coffee">
+                                    
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Black Tea<h5 class="menu-price">RS50</h5></h4>
+                                    <p class="m-0">Rich and bold black tea brewed to perfection.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle" src="{% static 'img/menu-2.jpg' %}" alt="Chocolate Coffee">
+                                    
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Single Espresso<h5 class="menu-price">RS100</h5></h4>
+                                    <p class="m-0">A delightful blend of coffee and rich chocolate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle" src="{% static 'img/menu-3.jpg' %}" alt="Coffee With Milk">
+                                
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4> Americano<h5 class="menu-price">RS130</h5></h4>
+                                    <p class="m-0">Smooth coffee with a creamy touch of milk.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cold Coffee Section -->
+                    <div class="col-lg-6">
+                        <h1 class="mb-5">Iced Coffee</h1>
+                        <div class="menu-item mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle" src="{% static 'img/menu-1.jpg' %}" alt="Black Coffee">
+                                    
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Iced Americano<h5 class="menu-price">RS165</h5></h4>
+                                    <p class="m-0">Refreshing cold black coffee for a hot day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle" src="{% static 'img/menu-2.jpg' %}" alt="Chocolate Coffee">
+                                    
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Iced Latte<h5 class="menu-price">RS210</h5></h4>
+                                    <p class="m-0">Iced coffee with a luscious chocolate twist.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-item mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle" src="{% static 'img/menu-3.jpg' %}" alt="Coffee With Milk">
+                                    
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4>Iced Mocha<h5 class="menu-price">RS280</h5></h4>
+                                    <p class="m-0">Chilled coffee with a smooth touch of milk.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-6 col-lg-3 mx-auto">
+                <a class="button btn btn-dark " type="button" href="{% url 'menu'%}">View Full Menu</a>
+                
+            </div>
+            <div class="catering">
+             
+                <div class="col-img">
+                    <img class="img1" src="{% static 'img/service-2.jpg' %}" alt="">
+               
+                </div>
+            
+                <div class="col-img">
+                    <img class="img2" src="{% static 'img/service-2.jpg' %}" alt="">
+                </div>
+            
+                <div class="catering-text"><h1>Are you looking for a catering service? </h1>
+                <p>Please make an inquiry below to get your catering service from a team of our professionals.</p>
+                <a class="btn btn-secondary  font-weight-bold" href="{% url 'reservation'%}" type="submit">Enquire Now</a>
+                </div> 
+            </div>
+            <div class="catering">
+                <div class="catering-text">
+                    <h4>Gallery</h4>
+                    <h1>Visit FRESHO  </h1>
+                    <p>Visit our gallery to see more of our beautiful collection.</p>
+                    <a class="btn btn-secondary  font-weight-bold" href="{% url 'gallery'%}" type="submit">View gallery</a>
+                    </div>
+             
+                <div class="col-img">
+                    <img class="img1" src="{% static 'img/service-2.jpg' %}" alt="">
+               
+                </div>
+            
+                <div class="col-img">
+                    <img class="img2" src="{% static 'img/service-2.jpg' %}" alt="">
+                </div>
+            
+                
+            </div>
+            
+            
+    </div>
+</div>
+
+
+{%endblock%}
+
+
+
+
+
+    

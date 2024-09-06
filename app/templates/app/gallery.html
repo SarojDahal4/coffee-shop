@@ -1,0 +1,15 @@
+{% extends 'app/index.html' %}
+{% block content %}
+{% load static %}
+
+<div class="gallery_main">
+    <div class="gallery">
+        {% for imagesss in images %}
+        <div >
+            <img src="{{ imagesss.image_view.url }}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

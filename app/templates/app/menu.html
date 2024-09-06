@@ -1,0 +1,47 @@
+{% extends 'app/index.html'%}
+{% block content%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="main">
+
+    <div class="image-container">
+        <img src="{% static 'img/bg.jpg' %}" alt="Background Image">
+        <div class="overlay-text">
+            <div class="text-content" >
+                <h1>Menu!!</h1>
+                <p>We only serve healthy food, a relaxed atmosphere, high-quality tea & coffee, and family friendly service. </p>
+            </div>
+            <div class='Home-logo'>
+                Fresho
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5 py-0 py-lg-5">
+            <h1 class="mb-3">Menu</h1>
+            
+            <p>At Fresho Café, we take pride in offering a diverse and delightful menu that caters 
+                to every coffee lover's desires. Our menu features both hot and cold coffee options,
+                crafted with the freshest, organic beans to ensure each cup is rich in flavor and aroma. 
+                From our robust Black Coffee and indulgent Chocolate Coffee to the creamy Coffee With Milk, 
+                every beverage is prepared with meticulous care to deliver an exceptional experience. Whether
+                you’re in the mood for a comforting hot drink or a refreshing cold brew, our fast and efficient 
+                service ensures that you receive your order promptly, allowing you to savor quality without the
+                wait. At Fresho Café, we are committed to quality and satisfaction, making every visit a 
+                pleasure with our expertly crafted beverages and inviting atmosphere.</p>
+            
+        </div>
+    
+        <div class="col-lg-5 py-2 py-lg-5">
+            <h1 class="mb-3">Our Menu</h1>
+            <div class='menu_image'>
+                <img src="{% static 'img/menu.png' %}" alt="Background Image">
+                </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
+    

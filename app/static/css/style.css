@@ -1,0 +1,403 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto;
+}
+/* Navbar Styling */
+
+
+
+.navbar {
+    
+    margin: 0;
+    padding: 0;
+    border: none; /* Remove border if any */
+    box-shadow: none; /* Remove any shadow if applied */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    width: 100%;
+    background-color: rgb(222, 209, 217); /* Adjust as needed */
+    z-index: 1000; 
+}
+.service-icon{
+    border: #DA9F5B solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Logo Styling */
+.navbar-logo {
+    text-decoration: none; /* Removes underline from the logo */
+    text-transform: uppercase; /* Makes the text uppercase */
+    border: orange solid;
+    border-radius: 50%;
+    text-shadow: 2px 2px 4px rgba(10, 10, 10, 0.5); /* Adds a shadow to the text */
+    font-family: Arial, Helvetica, sans-serif; /* Font family for the logo */
+    font-size: 30px; /* Font size of the logo */
+    color: white; /* Text color */
+    line-height: 60px;
+}
+
+/* Hover Effect for Logo */
+.navbar-logo:hover {
+    
+    text-decoration: none; /* Ensures underline is removed on hover */
+    text-shadow: 2px 2px 4px rgba(98, 56, 24, 0.7); /* Optional: Change text shadow color on hover for a better effect */
+}
+
+/* Navbar Navigation Styling */
+.navbar-nav {
+    margin-left: auto; /* Pushes navigation items to the right */
+}
+
+
+/* Navigation Link Styling */
+.nav-link {
+    text-decoration: dotted; /* Dotted underline for links */
+    color: rgb(3, 3, 3); /* Default link color */
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
+/* Hover Effect for Navigation Links */
+.nav-link:hover {
+   
+    font-style: italic;
+    
+    
+    font-size: 20px;
+    color: #512d1151; /* Changes link color on hover */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    position: relative;
+
+    
+    display: none; /* Ensure it is hidden by default and only shows when toggled */
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+    color: rgb(229, 184, 69); /* Text color of dropdown items */
+}
+
+/* Hover Effect for Dropdown Items */
+.dropdown-item:hover {
+    background-color: #4b6682; /* Background color on hover */
+    color: rgb(239, 189, 81); /* Text color on hover */
+}
+
+/* Show dropdown menu when toggled */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Style for the dotted bar */
+.dotted-bar {
+    display: none; /* Hide by default */
+    background-color:  rgb(24, 23, 22); /* Same background color as navbar */
+    padding: 10px;
+    border-top: 2px dotted #007bff; /* Dotted border for visual effect */
+    position: relative;
+}
+.navbar-toggler {
+    background-color: #007bff; /* Change to your desired color */
+    border: none; /* Optional: remove the border */
+    border-radius: 5px; /* Optional: add border radius for rounded corners */
+    padding: 10px; /* Optional: add padding for better click area */
+}
+.dotted-bar .menu-toggle {
+    cursor: pointer;
+    font-size: 16px;
+    color: #007bff; /* Color of the menu text */
+}
+
+/* Show the dotted bar on smaller screens */
+@media (max-width: 25%) {
+    .dotted-bar {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide the full navbar on small screens */
+    }
+}
+
+/* Show the navbar when toggled */
+@media (max-width: 25%) {
+    .navbar-toggler {
+        display: block; /* Show the toggle button on small screens */
+    }
+}
+
+
+/* Service page */
+/* Service page */
+/* Service page */
+/* Service page */
+/* Service page */
+
+
+
+
+
+
+
+
+
+/* Home Page */
+/* Home Page */
+/* Home Page */
+/* Home Page */
+/* Home Page */
+/* Main container to ensure proper layout */
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    height: 50vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to keep content contained */
+}
+
+/* Style for the image */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    display: block; /* Remove any default inline spacing */
+}
+
+/* Overlay text styling */
+.overlay-text {
+    border: white solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    text-align: center; /* Center align text horizontally */
+    width: 80%; /* Adjust width as needed */
+    padding: 20px; /* Padding around the text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners for the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Style for the text content */
+.text-content h1 {
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 10px;
+    font-weight: bold; /* Bold text */
+}
+
+.text-content p {
+    font-size: 1.2em; /* Adjust as needed */
+    margin: 0;
+}
+
+/* Style for the Home-logo */
+.Home-logo {
+    margin-top: 20px; /* Space above the logo */
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #DA9F5B; /* Color to match design theme */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    border: 3px solid #DA9F5B; /* Border to match logo color */
+    border-radius: 50%; /* Circular border */
+    padding: 20px 20px; /* Padding inside the circular border */
+    display: inline-block; /* Center align in text container */
+}
+
+.menu-item img {
+    border: 2px solid #ddd; /* Optional: Adds a border around the image */
+    padding: 5px; /* Optional: Adds padding around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the image */
+}
+
+.menu-price {
+    font-size: 1.5em; /* Larger font size for the price */
+    color: #333; /* Darker color for the price */
+    font-weight: bold; /* Bold text for the price */
+}
+.menu_list{
+    align-items: center;
+}
+.button{
+    padding: 10px;
+}
+.catering {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-img {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.img1, .img2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.catering-text {
+    flex: 2;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* About Page */
+/* About Page */
+/* About Page */
+/* About Page */
+/* About Page */
+/* About Page */
+.main{
+    background-color: rgb(235, 231, 230);
+}
+.section-title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.image-box {
+    position: relative;
+    padding-top:0px;
+    width: 100%; /* Full width of the container */
+    height: 50vh; /* Full viewport height */
+    overflow: hidden; /* Hide overflow to keep content contained */
+}
+
+/* Style for the image */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    display: block; /* Remove any default inline spacing */
+}
+
+/* Overlay text styling */
+.overlay-text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    width: 80%;
+    padding: 100%; /* Padding around the text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners for the background */
+    
+}
+
+.overlay-text h1 {
+    
+    font-size: 3em;
+    
+    font-size: 3em; /* Adjust as needed */
+    text-overflow: ellipsis; 
+    margin: 0;
+}
+
+
+
+/*image
+/*image
+/*image
+/*image
+/*image
+/*image */
+.menu_image {
+    
+  
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+  
+    padding: 0px; /* Optional: Add some padding inside the container */
+    margin: 0 auto; /* Center the container horizontally if needed */
+   /* Ensure the container does not exceed its parent width */
+    overflow: hidden; /* Hide any overflow from the image */
+}
+
+.menu_image img {
+    display: block; /* Remove extra space below the image */
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio of the image */
+}
+
+
+
+
+
+/* Ensure images are responsive and fit within their containers */
+/* Ensure images are responsive and fit within their containers */
+/* Container for the gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust based on your needs */
+    grid-auto-rows: minmax(100px, auto); 
+    gap: 15px; /* Spacing between photos */
+    padding: 10px;
+}
+
+/* Style for each image container */
+.gallery div {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Style for images */
+.gallery_main{
+    
+    min-height: 100vh;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.gallery div:hover img {
+    transform: scale(1.1);
+    
+}
+
+
+.main_bottom_bar{
+    .main_bottom_bar {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+    }
+}
+
+
+
+
+
